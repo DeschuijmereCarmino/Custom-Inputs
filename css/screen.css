@@ -802,6 +802,11 @@ input::placeholder {
     );
     border: none;
   }
+
+  .c-option--hidden:focus + .c-custom-option,
+  .c-option--hidden:active + .c-custom-option{
+    --custom-option-boxShadow: 0 0 0 3px var(--global-color-alpha);
+  }
 }
 
 .c-custom-option:hover {
